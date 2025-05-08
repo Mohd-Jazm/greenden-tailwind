@@ -29,59 +29,80 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
                 <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
             </li>
         </ul>
-        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6 md:hidden">
             <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
           </svg>
       </nav>
 
+      <section id="Sidenav" class="bg-green-100 fixed  z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right:-50%" >
+
+
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 md:flex items-center">
+            <li>  
+                <a  class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+                
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+       </section>
+
 
       <!--new section-->
 
-      <section>
-        <h1 class="text-3xl font-bold text-center">Our Products</h1>
+      <section class="p-4 text-center">
+        <h1 class="text-3xl font-bold mt-5 text-center">Our Products</h1>
         
         <div class="flex justify-center  mt-4">
-            <input type="text" class="border border-black p-5 w-[70px]" placeholder="Search for">
+            <input id="search"   style="width: 80%;" class="border border-black p-5 w-[70px]" placeholder="Search for a product" type="text">
           </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 md:flex justify-between gap-5 ">
-            <div >
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 md:flex justify-between gap-5 ">
+            <div class="text-center" >
                <img src="./images/bestseller1.jpg" class="inline hover:shadow-xl transform hover:translate-y-2 ">
                <h1>Rose Plant</h1>
                <p>20$</p>
             </div>
-            <div>
+            <div class="text-center">
                <img src="./images/bestseller2.jpg"  class="inline hover:shadow-xl transform hover:translate-y-2 ">
                <h1>Lavender Plant</h1>
                <p>20$</p>
             </div>
-            <div>
+            <div class="text-center">
                <img src="./images/bestseller4.jpg" class="inline hover:shadow-xl transform hover:translate-y-2 ">
                <h1>yellow flower Plant</h1>
                <p>20$</p>
             </div>
-            <div>
+            <div class="text-center">
                <img src="./images/bestseller3.jpg" class="inline hover:shadow-xl transform hover:translate-y-2 ">
                <h1>Green Plant</h1>
                <p>20$</p>
             </div>
         </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 mt-5 md:flex justify-between gap-5 ">
-            <div >
+            <div  class="grid grid-cols-2 md:grid-cols-4 mt-5 md:flex justify-between gap-5 ">
+            <div class="text-center">
                 <img src="./images/bestseller1.jpg" class="inline hover:shadow-xl transform hover:translate-y-2 ">
                 <h1>Rose Plant</h1>
                 <p>20$</p>
              </div>
-             <div>
+             <div class="text-center">
                 <img src="./images/bestseller2.jpg"  class="inline hover:shadow-xl transform hover:translate-y-2 ">
                 <h1>Lavender Plant</h1>
                 <p>20$</p>
              </div>
-             <div>
+             <div class="text-center">
                 <img src="./images/bestseller4.jpg" class="inline hover:shadow-xl transform hover:translate-y-2 ">
                 <h1>yellow flower Plant</h1>
                 <p>20$</p>
              </div>
-             <div>
+             <div class="text-center">
                 <img src="./images/bestseller3.jpg" class="inline hover:shadow-xl transform hover:translate-y-2 ">
                 <h1>Green Plant</h1>
                 <p>20$</p>
@@ -97,3 +118,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p>THe standard chunk of Lorem ipsum used since the 1500s is reproduced blow for those interest</p>
         <p>@ 2021 Greenday.com</p>
     </section>
+
+    <script src="product.js"></script>
+</body>
+</html>
